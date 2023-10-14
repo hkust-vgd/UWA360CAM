@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <br>
+  <!-- Basic Page Needs
+         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>UWA360CAM</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/footable.standalone.min.css">
+
+  <!-- Favicon
+         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- Google icon -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Analytics -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-86869673-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <!-- Hover effect: https://codepen.io/nxworld/pen/ZYNOBZ -->
+  <style>
+    img {
+      display: block;
+    }
+
+    .column-50 {
+      float: left;
+      width: 50%;
+    }
+
+    .row-50:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .floating-teaser {
+      float: left;
+      width: 30%;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .venue strong {
+      color: #99324b;
+    }
+
+    .benchmark {
+      width: 100%;
+      max-width: 960px;
+      overflow: scroll;
+      overflow-y: hidden;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Primary Page Layout
+         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <h4 style="text-align:center">UWA360CAM: A 360&deg; 24/7 Real-Time Streaming Camera System for Underwater Applications</h4>
+    <p align="center" , style="margin-bottom:12px;">
+      <a href="https://scholar.google.com/citations?user=IeERCoYAAAAJ" class="simple" >Quan-Dung Pham</a><sup>1</sup>
+      &nbsp;&nbsp;
+      <a class="simple" >Yipeng Zhu</a><sup>1</sup>
+      &nbsp;&nbsp;
+      <a class="simple" >Tan-Sang Ha</a><sup>1</sup>
+      &nbsp;&nbsp;
+      <a class="simple" >K.H. Long Nguyen</a><sup>1</sup>
+      &nbsp;&nbsp;
+      <a href="https://sonhua.github.io/" class="simple" >Binh-Son Hua</a><sup>2</sup>
+      &nbsp;&nbsp;
+      <a href="https://scholar.google.com/citations?user=16iMMwwAAAAJ" class="simple" >Sai-Kit Yeung</a><sup>1</sup>
+    </p>
+
+    <p align="center" style="margin-bottom:20px;">
+      <sup>1</sup>The Hong Kong University of Science and Technology
+      <span style="display:inline-block; width: 32px"></span>
+      <sup>2</sup>Trinity College Dublin
+      <!-- <span style="display:inline-block; width: 32px"></span>
+      <sup>3</sup>VinAI Research
+      <span style="display:inline-block; width: 32px"></span>
+      <sup>4</sup>Woven Planet North America, Level 5 -->
+      <br>
+    </p>
+
+      <div class="publication-links">
+        <center>
+        <!-- PDF Link. https://arxiv.org/abs/2011.12948 -->
+        <span class="link-block">
+          <a href="https://arxiv.org/pdf/2309.12668.pdf"
+             class="external-link button is-normal is-rounded is-dark">
+            <span class="icon">
+                <i class="fas fa-file-pdf"></i>
+            </span>
+            <span>Paper</span>
+          </a>
+        </span>
+      </center>
+      </div>
+
+    <figure>
+      <img src="images/overview.png" style="width:100%"></img>
+    </figure>
+    <p align="center">Our system functions in three main stages: 
+      1) The camera unit triggers the fisheye cameras in a synchronised manner. 
+      2) The transmission unit sends the images to the server via Fathom Tether. 
+      3) The high-performance server performs computer vision algorithms such as image stitching. </p>
+
+    <div id="teaser" class="container" style="width:100%; margin:0; padding:0">
+      <h5>Abstract</h5>
+      <p align="justify">
+        Omnidirectional camera is a cost-effective and information-rich sensor highly 
+        suitable for many marine applications and the ocean scientific community, encompassing 
+        several domains such as augmented reality, mapping, motion estimation, visual surveillance, 
+        and simultaneous localization and mapping. However, designing and constructing such a high-quality 
+        360&deg; real-time streaming camera system for underwater applications is a challenging problem 
+        due to the technical complexity in several aspects including sensor resolution, wide field of view, 
+        power supply, optical design, system calibration, and overheating management. This paper presents 
+        a novel and comprehensive system that addresses the complexities associated with the design, 
+        construction, and implementation of a fully functional 360&deg; real-time streaming camera system 
+        specifically tailored for underwater environments. Our proposed system, UWA360CAM, can stream video in 
+        real time, operate in 24/7, and capture 360&deg; underwater panorama images. Notably, our work is 
+        the pioneering effort in providing a detailed and replicable account of this system. The experiments 
+        provide a comprehensive analysis of our proposed system.
+        <br>
+        <br>
+      </p>
+    </div>
+
+    <div id="teaser" class="container" style="width:100%; margin:0; padding:0">
+      <h5>Video</h5>
+      <center>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/m44ZO_s4IGo?si=NSVvrlOKIQFUdCYN" title="UWA360CAM: A 360∘ 24/7 Real-Time Streaming Camera System for Underwater Applications" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </center>
+    </div>
+    
+
+    <br>
+
+    <div id="teaser" class="container" style="width:100%; margin:0; padding:0">
+      <h5>UWA360CAM System Overview</h5>
+      <center>
+        <!-- <img src="images/mechanism.png" style="width:50%"></img> -->
+        <div class="caption">
+          <p align="justify">
+            The UWA360CAM system comprises three distinct components, namely an underwater camera module, 
+            a transmission module, and a topside computer processing module. The camera operates in three main stages: 
+            1) The initial stage of the system triggers the fisheye cameras in a synchronised manner. 
+            2) In the subsequent stage, the onboard processing unit allows the transmission of the images to the server. 
+            3) The last stage is executed on a high-performance server to accommodate advanced computer vision algorithms 
+            such as video stitching. 
+          </p>
+        </div>
+        <br>
+      </center>
+    </div>
+
+    <div id="teaser" class="container" style="width:100%; margin:0; padding:0">
+      <h5>Operational Performance</h5>
+      <center>
+        <img src="images/result.png" style="width:100%"></img>
+        <img src="images/tem_time.png" style="width:50%"></img>
+        <div class="caption">
+          <br>
+          <p align="justify">
+            Qualitatively, it is illustrated that the pictures taken by this system are clear and high-quality in 
+            underwater environment. In addition to the image quality, further analysis the system temperature is conducted, 
+            which is a crucial aspect for performance because high temperature can affect the overall stability of the system. 
+            In the event that the system experiences excessive heat, it might result in malfunctions, decreased frames per 
+            second (FPS), or even abrupt shutdown. Above figure shows the temperatures of the edge device and cameras during 
+            functioning. It is evident that within the initial two-hour period, there is a significant rise in temperature for 
+            both the CPU and cameras, with the former increasing from 42.5&deg;C to 54&deg;C, and the latter increasing 
+            from 26.5&deg;C to 45&deg;C. Due to the forced convection in our airflow design, it is found that the CPU and 
+            camera temperatures have a tendency to remain stable subsequently.
+          </p>
+        </div>
+        <br>
+      </center>
+    </div>
+
+    <div class="section">
+      <h5>Citation</h5>
+      <pre style="margin:0">
+        <code>@article{pham2023uwa360cam,
+          title={UWA360CAM: A 360$\^{}$\{$$\backslash$circ$\}$ $24/7 Real-Time Streaming Camera System for Underwater Applications},
+          author={Pham, Quan-Dung and Zhu, Yipeng and Ha, Tan-Sang and Nguyen, KH and Hua, Binh-Son and Yeung, Sai-Kit},
+          journal={arXiv preprint arXiv:2309.12668},
+          year={2023}
+        }
+        </code>
+      </pre>
+    </div>
+
+    <!-- -->
+    <br>
+
+    <div class="section">
+      <h5>Acknowledgements</h5>
+      <p align="justify">
+         This research project is supported by  The Innovation and Technology Fund (ITF) and The Marine Conservation Enhancement Fund (MCEF) Hong Kong. 
+        <!-- The website is modified from this <a href="https://point2cyl.github.io/">template</a>. -->
+      </p>
+      <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=m&d=S01kOctakay-MHFRgKTZ_WD0AvnELUyzJuESYLy9Vh4&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/footable.min.js"></script>
+  
+
+  <script type="text/javascript">
+    jQuery(function ($) {
+      $('.table').footable();
+    });
+  </script>
+
+  <!-- End Document
+         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>
